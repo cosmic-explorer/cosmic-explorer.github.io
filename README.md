@@ -1,2 +1,3 @@
 # cosmic-explorer.github.io
-Cosmic Explorer web page
+This repository hosts the Cosmic Explorer project's web page, available at https://cosmicexplorer.org.
+
