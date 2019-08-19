@@ -160,7 +160,7 @@ Several features define the Cosmic Explorer concept,
                     <!--Grid column-->
                     <div class="col-md-4 mb-3">
                       <i class="fa fa-map-o fa-4x orange-text"></i>
-                        <h4 class="my-4 font-weight-bold">Layout</h4>
+                        <h4 class="my-4 font-weight-bold">Lay-Out</h4>
                         <p class="grey-text">
 Like the current generation of detectors, Cosmic Explorer features an L-shaped geometry and houses a single interferometer.
 This conventional design allows us to leverage decades of experience
@@ -436,7 +436,7 @@ and even a stochastic gravitational-wave background!
                         <p>by
                             <a>
                                 <strong>Matthew Evans</strong>
-                            </a>on March 13, 2019</p>
+                            </a>on August 13, 2018</p>
                         <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1836814" class="btn btn-primary btn-md">Read more</a>
 
                     </div>
