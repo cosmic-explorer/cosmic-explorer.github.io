@@ -15,6 +15,23 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    
+    <script> 
+    $(function(){
+      $("#includednavbar").load("navbar.html"); 
+    });
+    </script> 
 </head>
 
 <body>
@@ -23,61 +40,7 @@
     <header>
 
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark black fixed-top scrolling-navbar bg-faded">
-            <div class="container">
-
-                <!-- Navbar brand -->
-                <a class="navbar-brand" href="index.html"><img src="img/local/CEsplash_white_solid_lp4_black.png" class="img-fluid" alt=""></a>
-
-                <!-- Collapse button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Collapsible content -->
-                <div class="collapse navbar-collapse" id="basicExampleNav">
-
-                  <!-- Links -->
-                  <ul class="navbar-nav mr-auto smooth-scroll">
-                      <li class="nav-item">
-                          <a class="nav-link" href="index.html#intro">Home</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="index.html#overview">Overview</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="index.html#science">Science </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="index.html#gallery">News</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          The CE Consortium
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="consortium.html">About the Consortium</a>
-                          <a class="dropdown-item" href="https://roster.cosmicexplorer.org/registry/co_petitions/start/coef:16">Join the Consortium</a>
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          For Researchers
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="dcc.html">Document database </a>
-                          <a class="dropdown-item" href="sensitivity.html">Sensitivity Curves</a>
-                          <a class="dropdown-item" href="sciencecalls.html">CE Science Calls </a>
-                          <a class="dropdown-item" href="https://dcc.cosmicexplorer.org/CE-P2100003/public">CE Horizon Study</a>
-                          <a class="dropdown-item" href="dawn-vi.html">DAWN VI Report</a>
-                        </div>
-                      </li>
-                  </ul>
-                </div>
-                <!-- Collapsible content -->
-            </div>
-        </nav>
+        <div id="includednavbar"></div>
         <!--/.Navbar-->
 
         <!--Mask-->
@@ -743,138 +706,13 @@
     </main>
     <!--Main layout-->
 
-    <!--Footer-->
-    <footer class="page-footer font-small unique-color-dark pt-0">
-        <!-- Social buttons -->
-        <div class="primary-color">
-            <div class="container">
-                <!--Grid row-->
-                <div class="row py-4 d-flex align-items-center">
+    <script> 
+    $(function(){
+      $("#includefooter").load("footer.html"); 
+    });
+    </script> 
+    <div id="includefooter"></div>
 
-                    <!--Grid column-->
-                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                        <h6 class="mb-0 white-text">
-                            <!-- Get connected with us on social networks! -->
-                        </h6>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6 col-lg-7 text-center text-md-right">
-                        <!--
-                        <!--Facebook ->
-                        <a class="fb-ic ml-0">
-                            <i class="fa fa-facebook white-text mr-4"> </i>
-                        </a>
-                        <!--Twitter ->
-                        <a class="tw-ic">
-                            <i class="fa fa-twitter white-text mr-4"> </i>
-                        </a>
-                        <!--Google + ->
-                        <a class="gplus-ic">
-                            <i class="fa fa-google-plus white-text mr-4"> </i>
-                        </a>
-                        <!--Linkedin ->
-                        <a class="li-ic">
-                            <i class="fa fa-linkedin white-text mr-4"> </i>
-                        </a>
-                        <!--Instagram ->
-                        <a class="ins-ic">
-                            <i class="fa fa-instagram white-text mr-lg-4"> </i>
-                        </a>
--->
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-            </div>
-        </div>
-        <!-- Social buttons -->
-
-        <!--Footer Links-->
-        <div class="container mt-5 mb-4 text-left text-md-left">
-            <div class="row mt-3">
-
-                <!--First column-->
-                <div class="col">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>CE Project Directors' Office</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        Executive Director: M. Evans, MIT
-                    </p>
-                    <p>
-                        Director of Community and Land Partnerships: K. Daniel, University of Arizona
-                    </p>
-                    <p>
-                        Director of Equity, Diversity and Inclusion: J. Key, University of Washington (Bothel)
-                    </p>
-                    <p>
-                        Director of Instruments and Observatories: J. Smith, Cal State Fullerton
-                    </p>
-                    <p>
-                        Director of Observational Science: D. Brown, Syracuse University
-                    </p>
-                </div>
-                <!--/.First column-->
-
-                <!--Second column-->
-                <div class="col">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>Links</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a href="http://www.nsf.gov/">NSF - National Science Foundation</a>
-                    </p>
-                    <p>
-<!--                        <a href="https://resilience.arizona.edu/">UA Indigenous Resilience Center</a> -->
-                    <br>
-                        <a href="https://depts.washington.edu/cerse/">UW 
-			  Center for Evaluation & Research for STEM Equity</a>
-		    <br>
-                        <a href="https://astromdn.github.io/">MDN - Multimessenger Diversity Network</a>
-                    <br>
-                        <a href="https://gwic.ligo.org/">GWIC - Gravitational Wave International Committee</a>
-                    <br>
-                        <a href="https://www.ligo.org/">LIGO - Laser Interferometer Gravitational-Wave Detector</a>
-                    <br>
-                        <a href="http://www.et-gw.eu/">ET - Einstein Telescope</a>
-                    </p>
-                </div>
-                <!--/.Second column-->
-
-            </div>
-        </div>
-        <!--/.Footer Links-->
-
-        <!--Copyright-->
-        <div class="footer-copyright py-3 text-center">
-            © 2020 Copyright: Cosmic Explorer Project
-        </div>
-        <!--/.Copyright-->
-
-        <div class="footer-copyright py-3 text-center">
-            <div class="container mt-1 mb-1 text-center text-md-left">
-                This material is based upon work supported by the National Science Foundation under Grant Number
-                1836814. Any opinions, findings, and conclusions or recommendations expressed in this material are those
-                of the author(s) and do not necessarily reflect the views of the National Science Foundation.
-            </div>
-        </div>
-    </footer>
-    <!--Footer END footer.html-->
-
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
 
     <!-- Carousel options -->
     <script>
