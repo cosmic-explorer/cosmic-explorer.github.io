@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125312475-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-125312475-1');
+    </script>
+    <!-- START: Bootstrap code -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Cosmic Explorer</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+</head>
+
+<body>
+
+    <script> 
+    $(function(){
+      $("#includednavbar").load("navbar.html"); 
+    });
+    </script> 
+    <div id="includednavbar"></div>
+
+   <!--Main layout-->
+    <main class="mt-5">
+        <div class="pt-5"></div>
+        <div class="container">
+
+                    <!--Grid column-->
+                    <div class="col-md-10">
+
+                    <script> 
+                    $(function(){
+                      queryString = window.location.search;
+                      urlParams = new URLSearchParams(queryString);
+                      console.log(queryString);
+                      let path = "articles/" + urlParams.get('article') + ".html";
+                      console.log(path);
+                      $("#includearticle").load(path); 
+                    });
+                    </script> 
+                    <div id="includearticle"></div>
+        </div>
+    </main>
+    <!--Main layout-->
+
+    <script> 
+    $(function(){
+      $("#includefooter").load("footer.html"); 
+    });
+    </script> 
+    <div id="includefooter"></div>
+
+</body>
+
+</html>
