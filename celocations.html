@@ -81,6 +81,21 @@ The link above additionally contains a table with the latitudes and longitudes. 
 
                         </p>
 
+                        <script> 
+                        $(function(){
+                          $("#includemap").load("https://raw.githubusercontent.com/ahnitz/ce_location/refs/heads/master/gravitational_wave_observatories.html"); 
+                        });
+                        </script> 
+                        <div id="includemap"></div>
+                        
+                        
+                        <script> 
+                        $(function(){
+                          $("#includetable").load("https://raw.githubusercontent.com/ahnitz/ce_location/refs/heads/master/detector_location.html"); 
+                        });
+                        </script> 
+                        <div id="includetable"></div>
+
 
                     </div>
 
